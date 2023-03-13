@@ -9,5 +9,10 @@ int main() {
     cout << i + 1 << endl;
   }
   // WHILE LOOP
+  int i = 1;
+  while (i <= 5) {
+    cout << i << endl;
+    i++;
+  }
   // DO WILE LOOP
 }
