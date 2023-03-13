@@ -7,13 +7,13 @@ int main() {
   // LOOP CONSTRUCTS
 
   // FOR LOOP
-  cout << "Created using a for loop ---- : ";
+  cout << "Created using a for loop ---------- : ";
   for (int i = 0; i < 5; i++) {
     cout << i + 1 << " ";
   }
   cout << "\n";
   // WHILE LOOP
-  cout << "Created using a while loop -- : ";
+  cout << "Created using a while loop -------- : ";
   int i = 1;
   while (i <= 5) {
     cout << i << " ";
@@ -21,7 +21,7 @@ int main() {
   }
   cout << "\n";
   // DO WILE LOOP
-  cout << "Created using a do while loop : ";
+  cout << "Created using a do while loop ----- : ";
   int j = 1;
   do {
     cout << j << " ";
@@ -57,17 +57,17 @@ int main() {
   myUnsignedLong    =  23546325364765;
 
   // Printing all data types supported by the languages
-  cout << "myBool ------------ : " << myBool << endl;
-  cout << "myChar ------------ : " << myChar << endl;
-  cout << "myFloat ----------- : " << myFloat << endl;
-  cout << "myDouble ---------- : " << myDouble << endl;
-  cout << "myUnsignedChar ---- : " << myUnsignedChar << endl;
-  printf("mySignedChar ------ : %d\n", mySignedChar);
-  printf("myUnsignedInt ----- : %u\n", myUnsignedInt);
-  printf("myShort ----------- : %hd\n", myShort);
-  printf("myUnsignedShort --- : %hu\n", myUnsignedShort);
-  printf("myLong ------------ : %ld\n", myLong);
-  printf("myUnsignedLong ---- : %lu\n", myUnsignedLong);
+  cout << "myBool ---------------------------- : " << myBool << endl;
+  cout << "myChar ---------------------------- : " << myChar << endl;
+  cout << "myFloat --------------------------- : " << myFloat << endl;
+  cout << "myDouble -------------------------- : " << myDouble << endl;
+  cout << "myUnsignedChar -------------------- : " << myUnsignedChar << endl;
+  printf ("mySignedChar ---------------------- : %d\n", mySignedChar);
+  printf ("myUnsignedInt --------------------- : %u\n", myUnsignedInt);
+  printf ("myShort --------------------------- : %hd\n", myShort);
+  printf ("myUnsignedShort ------------------- : %hu\n", myUnsignedShort);
+  printf ("myLong ---------------------------- : %ld\n", myLong);
+  printf ("myUnsignedLong -------------------- : %lu\n", myUnsignedLong);
 
   
 
