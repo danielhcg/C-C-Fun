@@ -25,4 +25,25 @@ int main() {
     cout << j << " ";
     j++;
   } while (j <= 5);
+
+  cout << "\n";
+  
+  // Declaration of all data types supported by the language
+  bool myBool;
+  char myChar;
+  float myFloat;
+  double myDouble;
+
+  // Assignment of all data types supported by the language
+  myBool   = true;
+  myChar   = 'A';
+  myFloat  = 3.14;
+  myDouble = 3.14159;
+
+  // Printing all data types supported by the languages
+  cout << "myBool  : " << myBool << endl;
+  cout << "myChar  : " << myChar << endl;
+  cout << "myFloat : " << myFloat << endl;
+  cout << "myDouble: " << myDouble << endl;
+
 }
