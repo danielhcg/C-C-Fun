@@ -1,11 +1,34 @@
 #include <iostream>
 #include <stdio.h>
+#include <string.h>
 
 using namespace std;
 
-int main() {
-  // LOOP CONSTRUCTS
 
+  /***************** PARENT/CHILD CLASS ****************/
+class Car {
+
+  /*************** PUBLIC/PRIVATE MEMBERS **************/
+
+private:
+  int year;
+public:
+  string brand;
+  void setYear(int x) { year = x; }
+  int getYear() { return year; }
+};
+
+class Sedan : public Car {
+public:
+  void rev() {
+    cout << "VVVRRRROOOOMMMM!" << endl;
+  }
+};
+
+int main() {
+
+  /****************** LOOP CONSTRUCTS ******************/
+  
   // FOR LOOP
   cout << "Created using a for loop ---------- : ";
   for (int i = 0; i < 5; i++) {
@@ -29,8 +52,10 @@ int main() {
   } while (j <= 5);
 
   cout << "\n\n";
+
+  /******************** DATA TYPES *********************/
   
-  // Declaration of all data types supported by the language
+  // Declaration of all data types
   bool             myBool;
   char             myChar;
   float            myFloat;
@@ -69,6 +94,32 @@ int main() {
   printf ("myLong ---------------------------- : %ld\n", myLong);
   printf ("myUnsignedLong -------------------- : %lu\n", myUnsignedLong);
 
+  /***************** STRING CONCATENATE ****************/
+
+  // Declaring and assigning a string in C
+  char stringOne[50] = "\nYou stay classy, ";
+  char stringTwo[50] = "San Diego.";
+
+  // Concatenate
+  strcat(stringOne, stringTwo);
+
+  // Printing 
+  printf("%s", stringOne);
+  
+  /***************** PARENT/CHILD CLASS ****************/
+
+  Sedan accord;
+  accord.brand = "Toyota";
+  accord.setYear(2020);
+
+  cout << "\n\nMy car is a " << accord.getYear() << " " << accord.brand << endl;
+  cout << "It goes ";
+  accord.rev();
   
 
+  /************** MULTI-PARAMETER FUNCTION *************/
+
+  return 0;
+
 }
+
